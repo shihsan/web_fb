@@ -42,10 +42,16 @@
                     });
 
 
-                    /*FB.ui({
+                    FB.ui({
                         method: 'share',
                         href: 'https://kangw3n.github.io/facebook/',
-                    }, function (response) {});*/
+                    }, function (response) {
+                    	if (response && !response.error_code) {
+      						alert('Posting completed.');
+    					} else {
+      						alert('Error while posting.');
+    					}
+                    });
 					
 					
 
