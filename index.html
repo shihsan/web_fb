@@ -25,11 +25,19 @@
                     FB.api('/me', function (response) {
                         console.log(response);
                         console.log('My links is' + response.link);
-                        var choose = document.getElementById('username');
-                        choose.innerHTML=response.first_name;
-
-                        console.log('My Username is' + response.username);
+                        console.log('My Username is' + response.name);
                         console.log('My ID is' + response.id);
+
+                        var id = document.getElementById('id');
+                        id.innerHTML=response.id;
+                        var firstname = document.getElementById('firstname');
+                        firstname.innerHTML=response.first_name;
+                        var lastname = document.getElementById('lastname');
+                        lastname.innerHTML=response.last_name;
+                        var username = document.getElementById('username');
+                        username.innerHTML=response.name;
+                        var profile = document.getElementById('profile');
+                        profile.innerHTML=response.profile;
                     });
 
 
@@ -162,7 +170,11 @@
 
 	</script>
 	<h1>笨蛋</h1>
-	<div id="username"></div>
 	<div id="id"></div>
+	<div id="firstname"></div>
+	<div id="lastname"></div>
+	<div id="username"></div>
+	<div id="profile"></div>
+
 </body>
 </html>
