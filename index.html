@@ -36,8 +36,8 @@
                         lastname.innerHTML=response.last_name;
                         var username = document.getElementById('username');
                         username.innerHTML=response.name;
-                        var profile = document.getElementById('profile');
-                        profile.innerHTML=response.profile;
+                        // var profile = document.getElementById('profile');
+                        // profile.innerHTML=response.profile;
                     });
 
 
@@ -60,10 +60,10 @@
 							}
                     });*/
 					
-					/*FB.api('/me/picture?type=normal', function(response) { // normal/large/squere 
+					FB.api('/me/picture?type=normal', function(response) { // normal/large/squere 
 						var str="<img src="+ response.data.url +">";
 						$('body').append(str);
-					});*/
+					});
 					
 					
 					
@@ -174,7 +174,7 @@
 	<div id="firstname"></div>
 	<div id="lastname"></div>
 	<div id="username"></div>
-	<div id="profile"></div>
-
+<!-- 	<div id="profile"></div>
+ -->
 </body>
 </html>
