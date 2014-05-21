@@ -55,11 +55,11 @@
                         link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
                     });*/
 
-					/*FB.api('/me/likes', function (response) {
+					FB.api('/me/likes', function (response) {
                         for (var i = 0; i < response.length; i++){
 							console.log(response.data.name);
 							}
-                    });*/
+                    });
 					
 					FB.api('/me/picture?type=normal', function(response) { // normal/large/squere 
 						var str="<img src="+ response.data.url +">";
